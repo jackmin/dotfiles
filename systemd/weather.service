@@ -1,0 +1,9 @@
+[Unit]
+Description=Query Weather Information
+Wants=weatheraqi.timer
+
+[Service]
+ExecStart=/bin/sh -c '/home/exiumin/Apps/bin/weather > /tmp/weather'
+
+[Install]
+WantedBy=weatheraqi.target

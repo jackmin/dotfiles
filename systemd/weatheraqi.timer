@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Weather & AQI Query Every 30 minutes
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=30min
+Unit=weatheraqi.target
+
+[Install]
+WantedBy=multi-user.target

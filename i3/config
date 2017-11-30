@@ -158,14 +158,15 @@ bar {
 # Jack MIN 2014-12-18
 # custimize
 default_orientation vertical
-client.focused #4c7899 #87CEFA #000000 #2e9ef4
+#client.focused #4c7899 #87CEFA #000000 #2e9ef4
+client.focused #4C7899 #008000 #000000 #2e9ef4
 exec --no-startup-id ~/Apps/bin/setup_monitor.sh
 exec nm-applet
-exec pa-applet
+exec ~/Apps/bin/pa-applet
 #exec gnome-sound-applet
 #exec --no-startup-id nitrogen --restore
 new_window 1pixel
-new_float pixel 5
+new_float pixel 2
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
@@ -192,3 +193,4 @@ bindsym $mod+Pause mode "$mode_system"
 
 # set dpms (Enery Start) inactive timeout
 exec --no-startup-id xset dpms 600
+exec --no-startup-id feh --bg-scale /opt/elx/share/greeter/wallpaper_blue_official.png
