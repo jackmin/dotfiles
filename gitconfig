@@ -1,0 +1,21 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+	name = Xiaoyu Min
+	email = jackmin@mellanox.com
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[sendemail]
+	suppressfrom = true
+	confirm = always
+	envelopesender = jackmin@mellanox.com
+	suppresscc = self
+	smtpServer = git-send-mailer.rdmz.labs.mlnx
+#	smtpServer = labmailer.labs.mlnx
+	smtpdomain = mellanox.com
+	chainreplyto = false
+	smtpServerPort = 25
+[push]
+	default = simple
